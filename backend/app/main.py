@@ -1,14 +1,9 @@
 
-from fastapi import FastAPI
-from app.api import projects, tasks, reports, integrations
+from app.database.connection import engine
+from app.database.base import Base
 
-app = FastAPI(title="Engineering Flow Hub")
+from app.models.project import Project
+from app.models.task import Task
+from app.models.integration import Integration
 
-app.include_router(projects.router, prefix="/api/projects", tags=["projects"])
-app.include_router(tasks.router, prefix="/api/tasks", tags=["tasks"])
-app.include_router(reports.router, prefix="/api/reports", tags=["reports"])
-app.include_router(integrations.router, prefix="/api/integrations", tags=["integrations"])
-
-@app.get("/")
-def root():
-    return {"status":"ok"}
+Base.metadata.create_all(bind=engine)
