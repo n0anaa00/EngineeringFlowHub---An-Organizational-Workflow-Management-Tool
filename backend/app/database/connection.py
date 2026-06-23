@@ -1,14 +1,9 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+def get_db():
 
-DATABASE_URL = (
-    "postgresql://postgres:postgres@postgres:5432/engineeringflow"
-)
+    db = SessionLocal()
 
-engine = create_engine(DATABASE_URL)
+    try:
+        yield db
 
-SessionLocal = sessionmaker(
-    autocommit=False,
-    autoflush=False,
-    bind=engine
-)
+    finally:
+        db.close()

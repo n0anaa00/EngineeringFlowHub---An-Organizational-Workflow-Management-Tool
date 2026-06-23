@@ -1,6 +1,20 @@
 from fastapi import APIRouter
+from fastapi import Depends
+
+from sqlalchemy.orm import Session
+
+from app.database.connection import get_db
+
+from app.services.reporting_service import (
+    ReportingService
+)
+
 router = APIRouter()
 
+
 @router.get("/dashboard")
-def dashboard():
-    return {"projects":0,"open_tasks":0,"completed_tasks":0}
+def dashboard(
+    db: Session = Depends(get_db)
+):
+
+    return ReportingService.dashboard(db)
