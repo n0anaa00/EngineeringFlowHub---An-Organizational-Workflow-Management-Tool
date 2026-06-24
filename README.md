@@ -4,8 +4,14 @@ I am Aarne. A Sofware engineer student with an emphasis on human-related digital
 
 I wanted to demostrate my enthusiasm towards software architecture. This project is meant to be a rolling, iterative pursuit towards a complete a fully-working organizational task management tool. 
 
+Engineering Flow Hub, Internal Engineering Workflow Management Platform (React, FastAPI, PostgreSQL, Docker) 
 
-Current version
+
+
+
+
+
+<!-- Current version
 
 □ Mock Jira Integration
 □ Mock Azure DevOps Integration
@@ -23,4 +29,4 @@ To be iterated after
 □ Azure Deployment
 □ Authentication
 □ RBAC
-□ Audit Logging
+□ Audit Logging -->

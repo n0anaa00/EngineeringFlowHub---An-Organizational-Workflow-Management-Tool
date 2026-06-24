@@ -1,3 +1,8 @@
-export default function App() {
-  return <h1>Engineering Flow Hub</h1>
+import Router from "./routes/Router";
+
+function App() {
+
+    return <Router />;
 }
+
+export default App;
