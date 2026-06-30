@@ -7,6 +7,10 @@ I wanted to demostrate my enthusiasm towards software architecture. This project
 Engineering Flow Hub, Internal Engineering Workflow Management Platform (React, FastAPI, PostgreSQL, Docker) 
 
 
+API Documentation
+
+http://localhost:8000/docs
+
 
 
 
