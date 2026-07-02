@@ -17,20 +17,41 @@ http://localhost:8000/docs
 
 <!-- Current version
 
-□ Mock Jira Integration
-□ Mock Azure DevOps Integration
+- [x] FastAPI REST API
+- [x] SQLAlchemy ORM
+- [x] PostgreSQL integration
+- [x] CRUD services
+- [x] Service Layer architecture
+- [x] Dashboard reporting API
+- [x] Mock Jira integration
+- [x] Mock Azure DevOps integration
+- [ ] Authentication (JWT)
+- [ ] Audit logging
+- [ ] Alembic migrations
 
+---
 
-To be iterated after
+### Frontend
 
-□ Project Management
-□ Task Management
-□ Dashboard Reporting
-□ Docker Environment
-□ Jira Cloud API
-□ Azure DevOps API
-□ Oracle Database Support
-□ Azure Deployment
-□ Authentication
-□ RBAC
-□ Audit Logging -->
+- [x] React + TypeScript
+- [x] React Router
+- [x] Dashboard
+- [x] Projects view
+- [x] Tasks view
+- [x] Integrations view
+- [x] Axios API layer
+- [ ] Forms & validation
+- [ ] Search & filtering
+- [ ] Responsive UI
+
+---
+
+### Cloud & DevOps
+
+- [x] Docker
+- [x] Docker Compose
+- [x] GitHub Actions CI
+- [x] OpenAPI / Swagger
+- [ ] Azure App Service deployment
+- [ ] Azure Database
+- [ ] Production CI/CD pipeline
